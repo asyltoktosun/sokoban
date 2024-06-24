@@ -1,0 +1,48 @@
+html, body, #root, .App {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+
+
+.board {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+}
+
+.cell.wall {
+  background-image: url('/public/images/wall.gif');
+
+}
+
+
+.cell.box {
+  background-image: url('/public/images/box.gif');
+  background-size: cover ;
+}
+
+.cell.goal {
+  background-image: url('/public/images/location.gif');
+  background-size: cover ;
+}
+
+.cell.player {
+  background-image: url('/public/images/keeper.gif');
+  background-size: cover ;
+}
+
+.cell.empty {
+   background-image: url('/public/images/empty.gif');
+}
